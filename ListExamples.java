@@ -46,7 +46,7 @@ class ListExamples {
       index2 += 1;
     }
     try {
-      Process p = Runtime.getRuntime().exec("ls -aF");
+      Process p = Runtime.getRuntime().exec("touch hello.txt");
     }
     catch(IOException e) {
     }
