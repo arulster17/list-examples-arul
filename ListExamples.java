@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.IOException;
 
 interface StringChecker { boolean checkString(String s); }
 
@@ -23,7 +24,7 @@ class ListExamples {
 
   // Takes two sorted list of strings (so "a" appears before "b" and so on),
   // and return a new list that has all the strings in both list in sorted order.
-  static List<String> merge(List<String> list1, List<String> list2) {
+  static List<String> merge(List<String> list1, List<String> list2) throws IOException {
     List<String> result = new ArrayList<>();
     int index1 = 0, index2 = 0;
     while(index1 < list1.size() && index2 < list2.size()) {
